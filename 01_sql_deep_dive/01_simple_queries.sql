@@ -21,3 +21,10 @@ SELECT MIN(salary) FROM "public"."salaries";
 SELECT MAX(salary) FROM "public"."salaries";
 -- Calcular suma
 SELECT SUM(salary) FROM "public"."salaries";
+
+--- Filtrar datos
+SELECT first_name FROM "public"."employees" WHERE gender = 'F';
+-- AND
+SELECT first_name, gender, hire_date FROM "public"."employees" WHERE first_name = 'Georgi' AND last_name = 'Facello';
+-- OR
+SELECT first_name, gender, hire_date FROM "public"."employees" WHERE first_name = 'Georgi' AND first_name = 'Bezalel';

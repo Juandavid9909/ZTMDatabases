@@ -71,3 +71,7 @@ Retorna el valor máximo de un conjunto de valores, por ejemplo `SELECT MAX(camp
 
 ### SUM
 Calcula la suma de los valores, por ejemplo `SELECT SUM(campo1) FROM "Schema"."table";`.
+
+## Filtrar datos
+
+Para filtrar los datos podemos hacer uso de la palabra reservada `WHERE`, y construir un query como el siguiente: `SELECT campo1 FROM "Schema"."table" WHERE campofiltro = 'valor'`.
